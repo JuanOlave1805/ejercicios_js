@@ -45,5 +45,14 @@
   justify-content: space-around;
 }
 .height{
-  height: 120px;
+  height: auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  width: 95%;
+  height: 100%;
 }
