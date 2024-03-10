@@ -3,8 +3,8 @@
 // mediante excepciones y el mensaje debe ser personalizado.
 
 function ejercicio3() {
-  let divisor = prompt("Ingresa el valor del divisor:");
-  let dividendo = prompt("Ingresa el valor del dividendo");
+  let divisor = parseInt(prompt("Ingresa el valor del divisor:"));
+  let dividendo = parseInt(prompt("Ingresa el valor del dividendo"));
   let division;
 
   if (divisor == 0) {

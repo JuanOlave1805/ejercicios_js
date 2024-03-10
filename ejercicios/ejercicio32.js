@@ -1,11 +1,11 @@
 function ejercicio32(){
-    let producto1 = prompt("Ingresa el valor del producto");
-    let producto2 = prompt("Ingresa el valor del producto");
-    let producto3 = prompt("Ingresa el valor del producto");
-    let producto4 = prompt("Ingresa el valor del producto");
-    let producto5 = prompt("Ingresa el valor del producto");
-    let descuentos = prompt("Ingresa el valor del descuento de los primeros 3 productos");
-    let descuentos2 = prompt("Ingresa el valor del descuento de los ultimos 2 productos");
+    let producto1 = parseInt(prompt("Ingresa el valor del producto"));
+    let producto2 = parseInt(prompt("Ingresa el valor del producto"));
+    let producto3 = parseInt(prompt("Ingresa el valor del producto"));
+    let producto4 = parseInt(prompt("Ingresa el valor del producto"));
+    let producto5 = parseInt(prompt("Ingresa el valor del producto"));
+    let descuentos = parseInt(prompt("Ingresa el valor del descuento de los primeros 3 productos"));
+    let descuentos2 = parseInt(prompt("Ingresa el valor del descuento de los ultimos 2 productos"));
 
 
     let resultado = (producto1 * descuento)/100;

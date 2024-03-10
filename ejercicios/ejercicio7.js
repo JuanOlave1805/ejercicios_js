@@ -7,7 +7,7 @@
 // el tipo de impositivo que le corresponde.
 
 function ejercicio7() {
-  let ingresos = prompt("Ingresa la renta anual:");
+  let ingresos = parseInt(prompt("Ingresa la renta anual:"));
   let resultado;
 
   if (ingresos >= 10000 && ingresos <= 20000) { 

@@ -5,7 +5,7 @@
 // gratis, si tiene entre 4 y 18 años debe pagar 5€ y si es mayor de 18 años, 10€.
 
 function ejercicio9() {
-  let edad = prompt("Ingresa la edad del cliente");
+  let edad = parseInt(prompt("Ingresa la edad del cliente"));
 
   if (edad < 4) {
     alert("Ingresas gratis por ser menor a 4 años");

@@ -3,11 +3,11 @@
 // al usuario su edad e ingresos mensuales y muestre por pantalla si el usuario debe
 // tributar o no.
 function ejercicio5() {
-  let edad = prompt("Ingresa tu edad:");
+  let edad = parseInt(prompt("Ingresa tu edad:"));
   
 
   if (edad >= 16) {
-    let ingresos = prompt("Ingresa los ingresos que tienes al mes:");
+    let ingresos = parseInt(prompt("Ingresa los ingresos que tienes al mes:"));
     if (ingresos >= 1000) {
       alert("El usuario debe tributar");
     }

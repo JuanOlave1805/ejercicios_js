@@ -3,7 +3,7 @@
 // números positivos.
 
 function ejercicio1() {
-  let edad = prompt("Cual es tu edad: ");
+  let edad = parseInt(prompt("Cual es tu edad: "));
   if (edad >= 18 && edad > 0) {
     alert(`Eres mayor de edad con: ${edad} años`);
   }

@@ -1,5 +1,5 @@
 function ejercicio67(){
-    altura = prompt("Ingresa la altura del triangulo")
+    altura = parseInt(prompt("Ingresa la altura del triangulo"));
 
     if (!isNaN(altura) && altura > 0) {
         let resultado = "";

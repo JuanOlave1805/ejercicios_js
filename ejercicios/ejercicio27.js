@@ -1,9 +1,9 @@
 function ejercicio27(){
-    let nota1 = parseInt(prompt("Ingresa la nota del parcial 1"));
-    let nota2 = parseInt(prompt("Ingresa la nota del parcial 2"));
-    let nota3 = parseInt(prompt("Ingresa la nota del parcial 3"));
-    let examen = parseInt(prompt("Ingresa la nota del examen final"));
-    let trabajo = parseInt(prompt(  "Ingresa la nota del trabajo "));
+    let nota1 = parseInt(parseInt(prompt("Ingresa la nota del parcial 1")));
+    let nota2 = parseInt(parseInt(prompt("Ingresa la nota del parcial 2")));
+    let nota3 = parseInt(parseInt(prompt("Ingresa la nota del parcial 3")));
+    let examen = parseInt(parseInt(prompt("Ingresa la nota del examen final")));
+    let trabajo = parseInt(parseInt(prompt(  "Ingresa la nota del trabajo ")));
 
     let resultado1 = (nota1 + nota2 + nota3) / 3;
     let resultado2 = (resultado1 * 55) / 100;

@@ -12,7 +12,7 @@ function ejercicio2() {
     regex = new RegExp('^[A-Z]+$', 'i');
     if (regex.test(contraseña)) {
       alert("Contraseña valida");
-      contraseña_val = prompt("Ingresa la contraseña en rol de usuarop")
+      contraseña_val = prompt("Ingresa la contraseña en rol de usuario")
         if (contraseña === contraseña_val) {
           alert("Contraseña Correcta");
         }

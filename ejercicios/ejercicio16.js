@@ -1,6 +1,6 @@
 function ejercicio16() {
-  let distancia = prompt("Ingresa la distancia del proyectil:");
-  let tiempo = prompt("Ingresa el tiempo que demoro el proyectil en minutos:");
+  let distancia = parseInt(prompt("Ingresa la distancia del proyectil:"));
+  let tiempo = parseInt(prompt("Ingresa el tiempo que demoro el proyectil en minutos:"));
 
   let resultado1 = tiempo / 60;
   let resultado2 = distancia / resultado1;

@@ -2,7 +2,7 @@
 // si es par o impar
 
 function ejercicio4() {
-  let numero = prompt("Ingresa el numero");
+  let numero = parseInt(prompt("Ingresa el numero"));
 
   if (numero % 2 == 0) {
     alert("Numero par");

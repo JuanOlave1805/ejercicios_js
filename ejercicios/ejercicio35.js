@@ -1,11 +1,11 @@
 function ejercicio35(){
-    let llaves = prompt("Ingresa el precio de cada una de las llaves hexagonales");
-    let cant_llaves = prompt("Ingresa la cantidad de llaves hecagonales");
-    let bomba = prompt("Ingresa el precio de la bomba");
-    let cant_bomba = prompt("Ingresa la cantidad de las bombas");
-    let cajas = prompt("Ingresa el precio de cada caja de pernos")
-    let cant_cajas = prompt("Ingresa la cantidad de las cajas");
-    let restante = prompt("Ingresa el valor restante de la compra")
+    let llaves = parseInt(prompt("Ingresa el precio de cada una de las llaves hexagonales"));
+    let cant_llaves =parseInt( prompt("Ingresa la cantidad de llaves hecagonales"));
+    let bomba = parseInt(prompt("Ingresa el precio de la bomba"));
+    let cant_bomba = parseInt(prompt("Ingresa la cantidad de las bombas"));
+    let cajas = parseInt(prompt("Ingresa el precio de cada caja de pernos"));
+    let cant_cajas = parseInt(prompt("Ingresa la cantidad de las cajas"));
+    let restante = parseInt(prompt("Ingresa el valor restante de la compra"))
 
     let resultado1 = llaves * cant_llaves;
     let resultado2 = bomba * cant_bomba;

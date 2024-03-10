@@ -1,5 +1,5 @@
 function ejercicio8() {
-  let puntuacion = prompt("Ingresa la calificacion del año");
+  let puntuacion = parseInt(prompt("Ingresa la calificacion del año"));
   let empleado = prompt("Ingresa el nombre del empleado");
   
   if (puntuacion == 0.2 || puntuacion == 0.1 || puntuacion == 0.3 || puntuacion == 0.5) {

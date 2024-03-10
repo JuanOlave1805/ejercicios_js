@@ -1,7 +1,7 @@
 function ejercicio22() {
-  let minutos = prompt("Ingresa la cantidad de minutos");
-  let precio = prompt("Ingresa el valor del minuto sin iva");
-  let iva = prompt("Ingresa el valor de el iva");
+  let minutos = parseInt(prompt("Ingresa la cantidad de minutos"));
+  let precio = parseInt(prompt("Ingresa el valor del minuto sin iva"));
+  let iva = parseInt(prompt("Ingresa el valor de el iva"));
 
   let resultado1 = (precio * iva) / 100;
   let resultado2 = precio +++ resultado1;
