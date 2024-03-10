@@ -14,7 +14,8 @@ function ejercicio67(){
         }
 
         alert(resultado);
-    } else {
+    } 
+    else {
         alert("Por favor, ingrese un número entero positivo.");
     }
 }

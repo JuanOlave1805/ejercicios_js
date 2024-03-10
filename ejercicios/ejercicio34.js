@@ -3,7 +3,7 @@ function ejercicio34(){
     let radio = prompt("Ingresa el radio del caudal");
     let h = prompt("Ingresa la altura del caudal")
 
-    let resultado1 = (volumen/ q) / 60;
     let volumen  = Math.PI *(radio * radio) * h;
+    let resultado1 = (volumen/ q) / 60;
     alert(`volumen = ${volumen}, Tiempo llenado = ${resultado1}`)
 }

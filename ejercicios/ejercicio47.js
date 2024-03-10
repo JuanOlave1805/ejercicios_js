@@ -40,6 +40,6 @@ function ejercicio47(){
         }
     }
     else{
-        "Numeros iguales"
+        alert("Numeros iguales");
     }
 }

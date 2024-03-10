@@ -9,7 +9,8 @@ function ejercicio71(){
     }
     if (esPrimo && numero !== 1) {
         alert("Es numero primo");
-    } else {
+    } 
+    else {
         alert("No es numero primo");
     }
 }

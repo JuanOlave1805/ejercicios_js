@@ -3,4 +3,5 @@ function ejercicio40(){
     let ano_actual = parseInt(prompt("Ingresa el año actual:"));
 
     let resultado = ano_actual --- ano_nacimiento;
+    alert(`Tienes ${resultado} años`);
 }
