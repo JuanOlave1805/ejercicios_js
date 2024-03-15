@@ -1,37 +1,49 @@
-
 function contarSilabas(palabra) {
-    palabra = palabra.toLowerCase().trim();  // Convertir la palabra a minúsculas y eliminar espacios en blanco
-    let silabas = 0; // Contador de sílabas
-    let enSilaba = false; // Variable booleana para verificar si se encuentra en una sílaba
+  palabra = palabra.toLowerCase().trim();  //Vuelve la palabra en minuscula y elimina espacios.
+  let silabas = 0; //Contador de silabas, inicia en cero.
+  let enSilaba = false; // Valor true o false para saber si la palabra en el bucle es silaba o no.
 
-    // Recorremos la palabra letra por letra
-    for (let i = 0; i < palabra.length; i++) {
-        // Verificamos si la letra actual es una vocal
-        if (esVocal(palabra[i])) {
-            // Si la letra actual es una vocal y no estamos ya en una sílaba, incrementamos el contador de sílabas
-            if (!enSilaba) {
-                silabas++;
-                enSilaba = true;
-            }
-        } else {
-            // Si la letra actual no es una vocal, marcamos que no estamos en una sílaba
-            enSilaba = false;
-        }
+  for (let i = 0; i < palabra.length; i++) {  // Realiza el bucle en el que lee cada letra de la palabra.
+    const letra = palabra[i];
+    if ('aeiou'.includes(letra)) { //Realiza la condicion si la letra es una vocal
+      if (!enSilaba) {  //Realiza una condicion la cual evalua que enSilaba sea false y si se cumple incrementa el valor de las silabas y cambia enSilaba a verdadero hasta que vuelva a hacer el bucle de la siguiente letra
+        silabas++;
+        enSilaba = true;
+      }
+    } else { //Si enSilaba es verdadero se cambia a false
+      enSilaba = false;
     }
-    // Si no se encontraron sílabas, devolvemos 1
-    return silabas === 0 ? 1 : silabas;
+  }
+  return silabas;
 }
 
-// Función para verificar si una letra es una vocal
-function esVocal(letra) {
-    return 'aeiouáéíóú'.indexOf(letra) !== -1;
+//Funcion la cual imprime el numero de las silabas
+function imprimirNumeroSilabas() {
+  const palabra = prompt("Ingresa una palabra"); //Pide la palabra a evaluar
+  alert(`La palabra "${palabra}" tiene ${contarSilabas(palabra)} sílabas.`);
 }
 
-// Función para imprimir el número de sílabas de una palabra en un alert
-function imprimirNumeroSilabas(palabra) {
-    alert(`La palabra "${palabra}" tiene ${contarSilabas(palabra)} sílabas.`);
+
+
+
+
+function silabas(palabra){
+  // Declarar una variable constante `vocales` y asignarle la cadena de vocales
+  const vocales = "aeiou";
+  
+  // Divida la palabra de entrada en caracteres individuales y cree una matriz de caracteres
+  const silabas = palabra.split("")
+    // Filtrar la matriz de caracteres para incluir solo los caracteres que son vocales
+    .filter(char => vocales.includes(char))
+    // Devuelve la longitud de la matriz filtrada, que es el número de sílabas de la palabra.
+    .length;
+  // Print the result in the console
+  console.log(`${palabra} tiene ${silabas} silabas`)
 }
 
-// Ejemplo de uso
-let palabra = prompt("Ingresa una palabra");
-imprimirNumeroSilabas(palabra);
+
+// Expresión regular para contar sílabas en una palabra
+// La expresión regular busca grupos de una vocal ([aeiou]) seguida opcionalmente de otra vocal ([aeiouy]?)
+// y asegurándose de que no hay otra vocal después (?![aeiou])
+// La bandera 'g' permite buscar todas las ocurrencias en la cadena
+const contar_silabas = /([aeiou])(?:[aeiouy]?)(?![aeiou])/g;
