@@ -16,3 +16,7 @@ function ordenMayorMenor(...numeros) {
 let numerosOrdenados = ordenMayorMenor(...numeros);
 
 alert(`Números ordenados de mayor a menor: ${numerosOrdenados}`);
+
+//Arreglarlo con console.table
+//Funcion expresada
+//Falto definir parametro rest

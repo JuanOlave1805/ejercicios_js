@@ -1,7 +1,7 @@
 // export function sumar(numeros) {
 //   let numero = [];
 //   let resultado = 0;
-  
+
 //   for (let a = 0; a < numeros; a++) {
 //     numero[a] = parseInt(prompt("Ingresa el numero"));
 //     resultado = resultado +++ numero[a];
@@ -12,7 +12,7 @@
 // export function contar_primos(numeros) {
 //   let primos = 0;
 //   let numero = [];
-  
+
 //   for (let a = 0; a < numeros; a++) {
 //     numero[a] = parseInt(prompt("Ingresa el numero"));
 //     if (numero[a] % 2 === 0 || numero[a] % 3 === 0 || numero[a] % 5 === 0) {
@@ -25,7 +25,7 @@
 // export function contar_pares(numeros) {
 //   let pares = 0;
 //   let numero = [];
-  
+
 //   for (let a = 0; a < numeros; a++) {
 //     numero[a] = parseInt(prompt("Ingresa el numero"));
 //     if (numero[a] % 2 === 0) {
@@ -39,7 +39,7 @@
 //   let primos = [];
 //   let numero = [];
 //   let resultado = 0;
-  
+
 //   for (let a = 0; a < numeros; a++) {
 //     numero[a] = parseInt(prompt("Ingresa el numero"));
 //     if (numero[a] % 2 === 0 || numero[a] % 3 === 0 || numero[a] % 5 === 0) {
@@ -56,7 +56,7 @@
 //   let pares = [];
 //   let numero = [];
 //   let resultado = 0;
-  
+
 //   for (let a = 0; a < numeros; a++) {
 //     numero[a] = parseInt(prompt("Ingresa el numero"));
 //     if (numero[a] % 2 === 0){
@@ -73,17 +73,17 @@
 
 export function sumar(numeros) {
   let resultado = 0;
-  
+
   for (let a = 0; a < numeros.length; a++) {
     resultado += numeros[a];
   }
-  
+
   alert(`Suma de los números: ${resultado}`);
 }
 
 export function contar_primos(numeros) {
   let primos = 0;
-  
+
   for (let a = 0; a < numeros.length; a++) {
     let esPrimo = true;
     if (numeros[a] < 2) {
@@ -100,19 +100,19 @@ export function contar_primos(numeros) {
       primos++;
     }
   }
-  
+
   alert(`Cantidad de números primos: ${primos}`);
 }
 
 export function contar_pares(numeros) {
   let pares = 0;
-  
+
   for (let a = 0; a < numeros.length; a++) {
     if (numeros[a] % 2 === 0) {
       pares++;
     }
   }
-  
+
   alert(`Cantidad de números pares: ${pares}`);
 }
 
@@ -134,7 +134,7 @@ export function promedio_primos(numeros) {
 export function promedio_pares(numeros) {
   let pares = 0;
   let numero = 0;
-  
+
   for (let a = 0; a < numeros.length; a++) {
     if (numeros[a] % 2 === 0) {
       pares++;
@@ -142,6 +142,8 @@ export function promedio_pares(numeros) {
     }
   }
   let resultado = numero / pares;
-  
+
   alert(`Promedio de números pares: ${resultado}`);
 }
+
+//Comentar

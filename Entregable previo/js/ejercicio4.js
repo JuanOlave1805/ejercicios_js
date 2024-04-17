@@ -25,21 +25,24 @@
 
 
 function ejercicio() {
-    let cantidadPalabras = parseInt(prompt("Ingresa la cantidad de palabras que se van a ingresar"));
-    let palabras = [];
-    
-    for (let a = 1; a <= cantidadPalabras; a++){
-      let palabra = prompt("Ingresa la palabra");
-      palabras.push(palabra);
+  let cantidadPalabras = parseInt(prompt("Ingresa la cantidad de palabras que se van a ingresar"));
+  let palabras = [];
+
+  for (let a = 1; a <= cantidadPalabras; a++) {
+    let palabra = prompt("Ingresa la palabra");
+    palabras.push(palabra);
+  }
+
+  let palabraConMasPeso = palabras[0]; // Inicializamos con la primera palabra del array
+  for (let i = 1; i < palabras.length; i++) {
+    // Comparamos la palabra actual con la palabra con más peso en orden lexicográfico
+    if (palabras[i].localeCompare(palabraConMasPeso) === 1) {
+      palabraConMasPeso = palabras[i]; // Si la palabra actual tiene más "peso", la actualizamos
     }
-    
-    let palabraConMasPeso = palabras[0]; // Inicializamos con la primera palabra del array
-    for (let i = 1; i < palabras.length; i++) {
-        // Comparamos la palabra actual con la palabra con más peso en orden lexicográfico
-        if (palabras[i].localeCompare(palabraConMasPeso) === 1) {
-            palabraConMasPeso = palabras[i]; // Si la palabra actual tiene más "peso", la actualizamos
-        }
-    }
-    
-    alert(`Palabra con más peso: ${palabraConMasPeso}`);
+  }
+
+  alert(`Palabra con más peso: ${palabraConMasPeso}`);
 }
+
+//Funcion expresada
+//Parametro rest

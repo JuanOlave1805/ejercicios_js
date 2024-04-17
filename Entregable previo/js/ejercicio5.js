@@ -29,3 +29,6 @@ if (isNaN(a) || isNaN(b)) {
       alert("Operación no válida. Por favor, elige una opción del 1 al 4.");
   }
 }
+
+
+//Arreglar el metodo para que sea una clase y no funcion por funcion
