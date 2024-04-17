@@ -20,7 +20,7 @@ function ejercicio90() {
   else if (4 == numero) {
     let numero = "cuatro";
     alert(numero);
-  }
+  }                      
   else if (5 == numero) {
     let numero = "cinco";
     alert(numero);

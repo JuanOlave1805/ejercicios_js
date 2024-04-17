@@ -13,6 +13,6 @@ function ejercicio46(){
         alert("Numero 1 mayor");
     }
     else{
-        "Numeros iguales"
+        alert("Numeros iguales");
     }
 }
