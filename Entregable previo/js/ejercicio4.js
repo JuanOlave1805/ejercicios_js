@@ -24,25 +24,30 @@
 // alert(`La palabra más larga ingresada es: ${palabraMasLarga}`);
 
 
-function ejercicio() {
-  let cantidadPalabras = parseInt(prompt("Ingresa la cantidad de palabras que se van a ingresar"));
-  let palabras = [];
+// Definimos la función expresada 'ejercicio' que toma un número variable de palabras como argumentos
+const ejercicio = function (...palabras) {
 
-  for (let a = 1; a <= cantidadPalabras; a++) {
+  let cantidadPalabras = parseInt(prompt("Ingresa la cantidad de palabras que se van a ingresar")); // Solicitamos al usuario que ingrese la cantidad de palabras que desea ingresar
+  
+  palabras = []; // Inicializamos un arreglo para almacenar las palabras ingresadas
+
+  for (let a = 1; a <= cantidadPalabras; a++) { // Solicitamos al usuario que ingrese las palabras y las almacenamos en el arreglo 'palabras'
     let palabra = prompt("Ingresa la palabra");
     palabras.push(palabra);
   }
 
-  let palabraConMasPeso = palabras[0]; // Inicializamos con la primera palabra del array
+  let palabraConMasPeso = palabras[0]; // Inicializamos la variable 'palabraConMasPeso' con la primera palabra del array
+  
+  // Iteramos sobre el arreglo para encontrar la palabra con más "peso" en orden lexicográfico
   for (let i = 1; i < palabras.length; i++) {
-    // Comparamos la palabra actual con la palabra con más peso en orden lexicográfico
-    if (palabras[i].localeCompare(palabraConMasPeso) === 1) {
+    
+    if (palabras[i].localeCompare(palabraConMasPeso) === 1) { // Comparamos la palabra actual con la palabra con más "peso" en orden lexicográfico
       palabraConMasPeso = palabras[i]; // Si la palabra actual tiene más "peso", la actualizamos
     }
   }
 
-  alert(`Palabra con más peso: ${palabraConMasPeso}`);
-}
+  alert(`Palabra con más peso: ${palabraConMasPeso}`); // Mostramos la palabra con más "peso" al usuario
+};
 
 //Funcion expresada
 //Parametro rest

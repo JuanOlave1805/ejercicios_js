@@ -1,18 +1,21 @@
-export function suma(a, b) {
+export class calculadora {
+  suma(a, b) {
   return a + b;
 }
 
-export function resta(a, b) {
+resta(a, b) {
   return a - b;
 }
 
-export function multiplicacion(a, b) {
+multiplicacion(a, b) {
   return a * b;
 }
 
-export function division(a, b) {
+division(a, b) {
   if (b === 0) {
     throw new Error("Error: No se puede dividir por cero.");
   }
   return a / b;
 }
+}
+export default calculadora;
